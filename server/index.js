@@ -10,6 +10,12 @@ console.log(process.env.PORT, "====================");
 const app = express();
 const PORT = process.env.PORT || 3002;
 
+app.use(
+  cors({
+    origin: "https://rafeek-express.onrender.com",
+  })
+);
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
