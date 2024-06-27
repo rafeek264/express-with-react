@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3002;
 
 app.use(
   cors({
-    origin: "https://rafeek-express.onrender.com",
+    origin: "https://express-with-react.onrender.com",
   })
 );
 
@@ -32,14 +32,14 @@ app.listen(PORT, () => {
 
 // app.get("*", (req, res) => {
 //   res.sendFile(path.resolve(__dirname, "../client/build", "index.html"));
-  // res.sendFile(
-  //   path.resolve(__dirname, "../client/build", "index.html"),
-  //   (err) => {
-  //     if (err) {
-  //       res.status(err.status).send("File not found");
-  //     }
-  //   }
-  // );
+// res.sendFile(
+//   path.resolve(__dirname, "../client/build", "index.html"),
+//   (err) => {
+//     if (err) {
+//       res.status(err.status).send("File not found");
+//     }
+//   }
+// );
 // });
 
 // console.log(path.resolve(__dirname, "../client/build"));
